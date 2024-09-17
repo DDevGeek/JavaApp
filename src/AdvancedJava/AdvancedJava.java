@@ -6,44 +6,28 @@ import java.util.Set;
 
 public class AdvancedJava {
     public static void main(String[] args) {
-        Set<Integer> myNumbers = new HashSet<>();
-        Set<String> myNames = new LinkedHashSet<>();
-        Set<Integer> myNumber2 = new LinkedHashSet<>();
-        Pattern myPatt = new Pattern();
-        myPatt.printPattern();
+        Set<String> daysOfWeek = new HashSet<>();
+        Set<String> newDaysOfWeek = new LinkedHashSet<>();
 
+        daysOfWeek.add("Monday");
+        daysOfWeek.add("Tuesday");
+        daysOfWeek.add("Wednesday");
+        daysOfWeek.add("Thursday");
+        daysOfWeek.add("Friday");
+        daysOfWeek.add("Saturday");
+        daysOfWeek.add("Sunday");
+        System.out.println("Hash Set " + newDaysOfWeek);
 
-        myNumber2.add(1);
-        myNumber2.add(3);
-        myNumber2.add(4);
-        myNumber2.add(2);
-        myNumber2.add(2);
-        myNumber2.add(2);
-        myNumber2.add(2);
+        newDaysOfWeek.add("Monday");
+        newDaysOfWeek.add("Tuesday");
+        newDaysOfWeek.add("Wednesday");
+        newDaysOfWeek.add("Thursday");
+        newDaysOfWeek.add("Friday");
+        newDaysOfWeek.add("Saturday");
+        newDaysOfWeek.add("Sunday");
 
-        myNames.add("hello");
-        myNames.add("hello");
-        myNames.add("Construire");
-        myNames.add("Devoire");
-        myNames.add("How");
-        myNames.add("Avoire");
+        System.out.println("Liked Hash Set " + newDaysOfWeek);
+        System.out.println("Is the first Set equal to the second one?" + daysOfWeek.equals(newDaysOfWeek));
 
-        System.out.println(myNumber2);
     }
-}
-
-
-
-
-
-
-
-
-
-
-
-
-class NewAdvJava {
-    Set<Integer> number = new HashSet<>();
-    Set<String> names = new LinkedHashSet<>();
 }
